@@ -1,0 +1,23 @@
+﻿# Visual Studio files
+.vs/
+*.suo
+*.user
+*.psess
+*.vspscc
+
+# Build results
+bin/
+obj/
+
+# NuGet packages
+*.nupkg
+packages/
+*.nuget.props
+*.nuget.targets
+
+# .NET core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+**/Properties/PublishProfiles/
+*.swp
