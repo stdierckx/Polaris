@@ -799,15 +799,6 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Polaris.Contracts/1.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Polaris.Contracts.dll": {}
-        },
-        "runtime": {
-          "lib/net7.0/Polaris.Contracts.dll": {}
-        }
-      },
       "RestSharp/109.0.1": {
         "type": "package",
         "compile": {
@@ -2464,6 +2455,16 @@
         "build": {
           "build/netcoreapp3.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "Polaris.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Polaris.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Polaris.Contracts.dll": {}
+        }
       }
     }
   },
@@ -3588,17 +3589,6 @@
         "dotnet_library_license.txt",
         "netstandard.library.1.6.1.nupkg.sha512",
         "netstandard.library.nuspec"
-      ]
-    },
-    "Polaris.Contracts/1.0.0": {
-      "sha512": "cpnfNA0LdG4FJviJ0d0pECASr1D4qpRdC46V6iqGwYF8mTcpaV0I8EpnSo67mBuHX/+FzwJUWMe1gMGxe5qy9w==",
-      "type": "package",
-      "path": "polaris.contracts/1.0.0",
-      "files": [
-        ".nupkg.metadata",
-        "lib/net7.0/Polaris.Contracts.dll",
-        "polaris.contracts.1.0.0.nupkg.sha512",
-        "polaris.contracts.nuspec"
       ]
     },
     "RestSharp/109.0.1": {
@@ -7728,6 +7718,11 @@
         "xunit.runner.visualstudio.2.4.5.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "Polaris.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Polaris.Contracts/Polaris.Contracts.csproj",
+      "msbuildProject": "../Polaris.Contracts/Polaris.Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7770,7 +7765,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\code\\Polaris\\Polaris.Contracts\\Polaris.Contracts.csproj": {
+              "projectPath": "D:\\code\\Polaris\\Polaris.Contracts\\Polaris.Contracts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -7796,10 +7795,6 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[7.0.4, )"
-          },
-          "Polaris.Contracts": {
-            "target": "Package",
-            "version": "[1.0.0, )"
           },
           "RestSharp": {
             "target": "Package",

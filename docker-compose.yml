@@ -2,7 +2,9 @@
 
 services:
   polaris:
-    build: .
+    build: 
+      context: .
+      dockerfile: ./Polaris.Api/dockerfile
     ports:
       - "8080:80"
     depends_on:
@@ -17,3 +19,14 @@ services:
       ACCEPT_EULA: Y
     ports:
       - "1433:1433"
+
+  polaris-ui:
+    build: 
+      context: .
+      dockerfile: ./Polaris.Ui/dockerfile
+    ports:
+      - "5000:80"
+    depends_on:
+      - polaris
+    environment:
+      - PolarisApiUrl=http://polaris:80

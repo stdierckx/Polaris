@@ -28,7 +28,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\code\\Polaris\\Polaris.Contracts\\Polaris.Contracts.csproj": {
+                "projectPath": "D:\\code\\Polaris\\Polaris.Contracts\\Polaris.Contracts.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -54,10 +58,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.4, )"
-            },
-            "Polaris.Contracts": {
-              "target": "Package",
-              "version": "[1.0.0, )"
             },
             "RestSharp": {
               "target": "Package",
@@ -97,6 +97,62 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\code\\Polaris\\Polaris.Contracts\\Polaris.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\code\\Polaris\\Polaris.Contracts\\Polaris.Contracts.csproj",
+        "projectName": "Polaris.Contracts",
+        "projectPath": "D:\\code\\Polaris\\Polaris.Contracts\\Polaris.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Stephane\\.nuget\\packages\\",
+        "outputPath": "D:\\code\\Polaris\\Polaris.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Stephane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\code\\Polaris\\Polaris.Contracts\\bin\\Debug\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

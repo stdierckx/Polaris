@@ -2,8 +2,14 @@
 WORKDIR /app
 
 # Copy everything and build
+# Copy csproj and restore as distinct layers
+COPY ../Polaris.Contracts/ ./Polaris.Contracts/
+COPY ../Polaris.Api/Polaris.Api.csproj ./Polaris.Api/
+RUN dotnet restore Polaris.Api/Polaris.Api.csproj
+
+# Copy everything else and build
 COPY . ./
-RUN dotnet restore && dotnet publish -c Release -o out
+RUN dotnet publish -c Release -o out
 
 # Build runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:7.0

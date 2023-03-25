@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polaris.Api", "Polaris.Api\Polaris.Api.csproj", "{A09D9A87-2829-441E-B54E-8ED60A2EEA48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polaris.Ui", "Polaris.Ui\Polaris.Ui.csproj", "{EB8E0EF8-6833-476C-8BAF-074FDE8BB147}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polaris.Contracts", "Polaris.Contracts\Polaris.Contracts.csproj", "{90CE3100-11B0-4E14-B47A-327B4E03DDC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A09D9A87-2829-441E-B54E-8ED60A2EEA48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A09D9A87-2829-441E-B54E-8ED60A2EEA48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A09D9A87-2829-441E-B54E-8ED60A2EEA48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A09D9A87-2829-441E-B54E-8ED60A2EEA48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB8E0EF8-6833-476C-8BAF-074FDE8BB147}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB8E0EF8-6833-476C-8BAF-074FDE8BB147}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB8E0EF8-6833-476C-8BAF-074FDE8BB147}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB8E0EF8-6833-476C-8BAF-074FDE8BB147}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90CE3100-11B0-4E14-B47A-327B4E03DDC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90CE3100-11B0-4E14-B47A-327B4E03DDC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90CE3100-11B0-4E14-B47A-327B4E03DDC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90CE3100-11B0-4E14-B47A-327B4E03DDC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
