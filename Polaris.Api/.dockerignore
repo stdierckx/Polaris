@@ -5,11 +5,4 @@ node_modules
 .vs
 *.log
 *.user
-*.vscode
-
-# include necessary files and directories
-Dockerfile
-docker-compose.yml
-Polaris.Api.csproj
-Polaris.Api/
-Polaris.Api.Tests/
+*.vscodes
