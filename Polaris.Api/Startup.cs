@@ -29,6 +29,12 @@ namespace Polaris.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+            
+            using (var scope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
+            {
+                var dbContext = scope.ServiceProvider.GetService<PolarisDbContext>();
+                dbContext.Database.Migrate();
+            } 
 
             app.UseHttpsRedirection();
 

@@ -2,7 +2,6 @@
 WORKDIR /app
 
 # Copy everything and build
-# Copy csproj and restore as distinct layers
 COPY ../Polaris.Contracts/ ./Polaris.Contracts/
 COPY ../Polaris.Api/Polaris.Api.csproj ./Polaris.Api/
 RUN dotnet restore Polaris.Api/Polaris.Api.csproj

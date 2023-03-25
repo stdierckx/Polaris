@@ -1,7 +1,7 @@
 ﻿version: '3'
 
 services:
-  polaris:
+  polaris-api:
     build: 
       context: .
       dockerfile: ./Polaris.Api/dockerfile
@@ -10,7 +10,7 @@ services:
     depends_on:
       - db
     environment:
-      - ConnectionStrings__DefaultConnection=Server=db;Database=Polaris;User Id=sa;Password=YourStrongPassword123;TrustServerCertificate=True;MultipleActiveResultSets=true
+      - ConnectionStrings__DefaultConnection=Server=db,1433;Database=Polaris;User Id=sa;Password=YourStrongPassword123;TrustServerCertificate=True;MultipleActiveResultSets=true
 
   db:
     image: mcr.microsoft.com/mssql/server:2019-latest
@@ -27,6 +27,6 @@ services:
     ports:
       - "5000:80"
     depends_on:
-      - polaris
+      - polaris-api
     environment:
-      - PolarisApiUrl=http://polaris:80
+      - PolarisApiUrl=http://polaris-api:80
