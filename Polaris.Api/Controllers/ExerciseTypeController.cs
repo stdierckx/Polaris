@@ -1,7 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using FluentValidation.Results;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Polaris.Api.DataLayer;
 using Polaris.Api.Models;
+using Polaris.Api.Validations;
 
 namespace Polaris.Api.Controllers
 {
@@ -38,6 +41,13 @@ namespace Polaris.Api.Controllers
         [HttpPost]
         public async Task<ActionResult<ExerciseType>> PostExerciseType(ExerciseType exerciseType)
         {
+            ValidationResult validationResult = new ExerciseTypeValidator().Validate(exerciseType);
+
+            if (!validationResult.IsValid)
+            {
+                return BadRequest(validationResult.Errors);
+            }
+
             _context.ExerciseTypes.Add(exerciseType);
             await _context.SaveChangesAsync();
 

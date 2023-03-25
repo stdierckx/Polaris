@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "F5kUUad56nStmRPa6FvA67ON1x9EzESPL7FW1Kl7Qk3B/3hd22uT7aeF4BS0bZPbCZosdv0qE4RPTygg62JO+w==",
+  "dgSpecHash": "9EBMXQJJWcVCNX6mbfPwgSAQ1Zz0VXPtbx1glEzBu4Qfu7NOx0sCwolXRJGsDMd4dUUbyU9RUnBDR+o9LzVa+g==",
   "success": true,
   "projectFilePath": "D:\\code\\Polaris\\Polaris.Api\\Polaris.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Stephane\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Stephane\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\Stephane\\.nuget\\packages\\fluentvalidation\\11.2.1\\fluentvalidation.11.2.1.nupkg.sha512",
+    "C:\\Users\\Stephane\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "C:\\Users\\Stephane\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "C:\\Users\\Stephane\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Stephane\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Stephane\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

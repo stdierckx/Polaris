@@ -1,6 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using FluentValidation.AspNetCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Polaris.Api.DataLayer;
+using Polaris.Api.Validations;
 
 namespace Polaris.Api
 {
