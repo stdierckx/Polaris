@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using Polaris.Api.Models;
+using Polaris.Contracts.Models;
 
 namespace Polaris.Api.Validations;
 

@@ -1,10 +1,8 @@
-﻿using FluentValidation.Results;
-using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Polaris.Api.DataLayer;
-using Polaris.Api.Models;
 using Polaris.Api.Validations;
+using Polaris.Contracts.Models;
 
 namespace Polaris.Api.Controllers
 {
@@ -41,7 +39,7 @@ namespace Polaris.Api.Controllers
         [HttpPost]
         public async Task<ActionResult<ExerciseType>> PostExerciseType(ExerciseType exerciseType)
         {
-            ValidationResult validationResult = new ExerciseTypeValidator().Validate(exerciseType);
+            var validationResult = await new ExerciseTypeValidator().ValidateAsync(exerciseType);
 
             if (!validationResult.IsValid)
             {
@@ -57,9 +55,16 @@ namespace Polaris.Api.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutExerciseType(int id, ExerciseType exerciseType)
         {
+            var validationResult = await new ExerciseTypeValidator().ValidateAsync(exerciseType);
+            
             if (id != exerciseType.Id)
             {
                 return BadRequest();
+            }
+            
+            if(!validationResult.IsValid)
+            {
+                return BadRequest(validationResult.Errors);
             }
 
             _context.Entry(exerciseType).State = EntityState.Modified;
@@ -74,10 +79,7 @@ namespace Polaris.Api.Controllers
                 {
                     return NotFound();
                 }
-                else
-                {
-                    throw;
-                }
+                throw;
             }
 
             return NoContent();

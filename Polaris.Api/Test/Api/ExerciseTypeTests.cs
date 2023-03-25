@@ -1,4 +1,4 @@
-﻿using Polaris.Api.Models;
+﻿using Polaris.Contracts.Models;
 using RestSharp;
 using Xunit;
 

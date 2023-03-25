@@ -1,4 +1,4 @@
-﻿namespace Polaris.Api.Models;
+﻿namespace Polaris.Contracts.Models;
 
 public class User
 {

@@ -1,8 +1,6 @@
-﻿using FluentValidation.AspNetCore;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Polaris.Api.DataLayer;
-using Polaris.Api.Validations;
 
 namespace Polaris.Api
 {
@@ -10,13 +8,11 @@ namespace Polaris.Api
     {
         private readonly IConfiguration _configuration;
 
-
         public Startup(IConfiguration configuration)
         {
             _configuration = configuration;
         }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<PolarisDbContext>(options =>
@@ -27,7 +23,6 @@ namespace Polaris.Api
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo { Title = "Polaris", Version = "v1" }); });
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())

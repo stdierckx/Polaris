@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Polaris.Api.Models;
+using Polaris.Contracts.Models;
 
 namespace Polaris.Api.DataLayer;
 

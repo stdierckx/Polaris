@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Polaris.Api.DataLayer;
-using Polaris.Api.Models;
+using Polaris.Contracts.Models;
 
 namespace Polaris.Api.Controllers
 {

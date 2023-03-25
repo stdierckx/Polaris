@@ -8,6 +8,9 @@
 # Build results
 bin/
 obj/
+Polaris.Api/bin/
+Polaris.Api/obj/
+
 
 # NuGet packages
 *.nupkg

@@ -799,6 +799,15 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
+      "Polaris.Contracts/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Polaris.Contracts.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/Polaris.Contracts.dll": {}
+        }
+      },
       "RestSharp/109.0.1": {
         "type": "package",
         "compile": {
@@ -3579,6 +3588,17 @@
         "dotnet_library_license.txt",
         "netstandard.library.1.6.1.nupkg.sha512",
         "netstandard.library.nuspec"
+      ]
+    },
+    "Polaris.Contracts/1.0.0": {
+      "sha512": "cpnfNA0LdG4FJviJ0d0pECASr1D4qpRdC46V6iqGwYF8mTcpaV0I8EpnSo67mBuHX/+FzwJUWMe1gMGxe5qy9w==",
+      "type": "package",
+      "path": "polaris.contracts/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net7.0/Polaris.Contracts.dll",
+        "polaris.contracts.1.0.0.nupkg.sha512",
+        "polaris.contracts.nuspec"
       ]
     },
     "RestSharp/109.0.1": {
@@ -7715,6 +7735,7 @@
       "FluentValidation.AspNetCore >= 11.2.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.4",
+      "Polaris.Contracts >= 1.0.0",
       "RestSharp >= 109.0.1",
       "Swashbuckle.AspNetCore >= 6.2.3",
       "Swashbuckle.AspNetCore.SwaggerUI >= 6.2.3",
@@ -7743,6 +7764,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "D:\\code\\Polaris\\Polaris.Contracts\\bin\\Debug\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7774,6 +7796,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[7.0.4, )"
+          },
+          "Polaris.Contracts": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           },
           "RestSharp": {
             "target": "Package",
